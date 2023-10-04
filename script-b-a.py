@@ -1,36 +1,36 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import docx
+import PyPDF2
 import any-other-docx-html-packages
 
-def docx_text_extractor(docx_path str) -> str:
+def pdf_text_extractor(docx_path str) -> str:
   """
   Returns the text extracted from docx file
   """
   
-  file = docx_reader(docx_path)
-  docx_text = docx_extractor(file)
-  parsed_text = docx_parser(docx_text)
+  file = pdf_reader(pdf_path)
+  pdf_text = pdf_extractor(file)
+  parsed_text = pdf_parser(pdf_text)
 
   return parsed_text
 
 
-def docx_reader(file_path: str) -> object:
+def pdf_reader(file_path: str) -> object:
   """
-  Reads docx files and returns an object where
+  Reads a pdf file and returns an object where
   the text can be extracted
   """
   ...
 
 
-def docx_extractor(file_path: object) -> str:
+def pdf_extractor(file_path: object) -> str:
   """
-  Extracts text from docx
+  Extracts text from pdf
   """
   ...
   
 
-def docx_parser(file_path: object) -> str:
+def pdf_parser(file_path: object) -> str:
   """
   Parses the text extracted from docx
   """
