@@ -1,0 +1,1 @@
+# Run `python -v > runtime.txt` within your virtual environment to create this file on the project folder
